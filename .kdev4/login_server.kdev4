@@ -1,0 +1,48 @@
+[Buildset]
+BuildItems=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x18\x00l\x00o\x00g\x00i\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r)
+
+[CMake]
+Build Directory Count=1
+Current Build Directory Index-Host-System=0
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=/mnt/data/mc-arch/projects/login_server/build
+Build Type=Debug
+CMake Binary=/usr/bin/cmake
+CMake Executable=/usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=/usr/local
+Runtime=Host-System
+
+[Launch]
+Launch Configurations=Launch Configuration 0
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=nativeAppLauncher
+Name=login-server
+Type=Native Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+Debugger Shell=
+Dependencies=@Variant(\x00\x00\x00\t\x00\x00\x00\x00\x01\x00\x00\x00\x0b\x00\x00\x00\x00\x01\x00\x00\x00\x18\x00l\x00o\x00g\x00i\x00n\x00_\x00s\x00e\x00r\x00v\x00e\x00r)
+Dependency Action=Build
+Display Demangle Names=true
+Display Static Members=false
+EnvironmentGroup=default
+Executable=file:///mnt/data/mc-arch/projects/login_server/build/login_server
+External Terminal=konsole --noclose --workdir %workdir -e %exe
+GDB Path=file:///usr/bin/gdb
+Project Target=
+Remote GDB Config Script=
+Remote GDB Run Script=
+Remote GDB Shell Script=
+Start With=ApplicationOutput
+Use External Terminal=false
+Working Directory=file:///mnt/data/mc-arch/projects/login_server/build
+isExecutable=true
+
+[Project]
+VersionControlSupport=kdevgit
