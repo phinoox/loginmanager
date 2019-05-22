@@ -10,7 +10,7 @@ const Poco::Util::IniFileConfiguration & ConfigLoader::getConfig()
     
 static AutoPtr<IniFileConfiguration> config;
   if(config.isNull()){
-    AutoPtr<IniFileConfiguration> conf(new IniFileConfiguration("config.ini"));
+    AutoPtr<IniFileConfiguration> conf(new IniFileConfiguration("../config/config.ini"));
     config = conf;
   }
   if(config.isNull())
