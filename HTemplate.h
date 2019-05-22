@@ -3,6 +3,9 @@
 #include <map>
 #include <vector>
 
+
+struct CachedTemplate;
+
 class HTemplate {
 public:
     HTemplate(std::string filename);
@@ -10,6 +13,6 @@ public:
     void setValue(std::string key,std::string value);
     std::string write();
 private:
-    std::vector<std::string> lines;
-    std::map<std::string,std::vector<int>> entries;
+    CachedTemplate* cached;
+   
 };
