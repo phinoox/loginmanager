@@ -18,7 +18,9 @@ set(SOURCES
             HTemplate.h
             HTemplate.cpp
             AdminRequestHandler.h
-            AdminRequestHandler.cpp)
+            AdminRequestHandler.cpp
+            StaticFileHandler.h
+            StaticFileHandler.cpp)
 
 add_executable(login_server ${SOURCES})
 target_link_libraries(login_server Poco::Foundation Poco::Util Poco::Net Poco::JSON Poco::DataMySQL)

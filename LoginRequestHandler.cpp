@@ -15,7 +15,7 @@ using namespace std;
 void LoginRequestHandler::handleRequest(HTTPServerRequest& request, HTTPServerResponse& response)
 {
     Poco::Util::Application & app = Poco::Util::Application::instance();
-        app.logger().information("Request from %s", request.clientAddress().toString());
+        app.logger().information("Login Request from %s", request.clientAddress().toString());
 
         response.setChunkedTransferEncoding(true);
         response.setContentType("application/json");
