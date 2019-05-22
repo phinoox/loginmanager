@@ -19,7 +19,7 @@ void AdminRequestHandler::handleRequest(HTTPServerRequest& request, HTTPServerRe
 
         response.setChunkedTransferEncoding(true);
         
-        HTemplate tmpl("../content/admin.html");
+        HTemplate tmpl("../templates/admin.html");
         response.send() << tmpl.write();
             
     
