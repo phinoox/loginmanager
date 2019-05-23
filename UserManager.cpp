@@ -22,7 +22,7 @@ Connector::registerConnector();
     
 }
 
-User UserManager::GetUser(std::string name, std::string pw)
+User UserManager::GetUser(std::string name)
 {
   static string dbhost = ConfigLoader::getConfig().getString("DbConnection.host");
   static string dbuser = ConfigLoader::getConfig().getString("DbConnection.user");
