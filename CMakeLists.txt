@@ -20,7 +20,9 @@ set(SOURCES
             AdminRequestHandler.h
             AdminRequestHandler.cpp
             StaticFileHandler.h
-            StaticFileHandler.cpp)
+            StaticFileHandler.cpp
+            CryptoUtil.h
+            CryptoUtil.cpp)
 
 add_executable(login_server ${SOURCES})
 target_link_libraries(login_server Poco::Foundation Poco::Util Poco::Net Poco::JSON Poco::DataMySQL)

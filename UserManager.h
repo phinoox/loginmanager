@@ -6,6 +6,7 @@ struct User {
     std::string name;
     std::string main_id;
     std::string pw;
+    std::string secret;
 };
 
 class UserManager
@@ -21,6 +22,6 @@ public:
         return instance;
 
     };
-    User GetUser ( std::string name,std::string pw );
-
+    User GetUser ( std::__cxx11::string name );
+    void SaveUser(User user);
 };

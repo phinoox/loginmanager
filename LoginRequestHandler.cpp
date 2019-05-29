@@ -26,7 +26,7 @@ void LoginRequestHandler::handleRequest(HTTPServerRequest& request, HTTPServerRe
         string name=form.get("id");
         string pw=form.get("pw");
         
-        user=UserManager::getInstance().GetUser(name,pw);
+        user=UserManager::getInstance().GetUser(name);
         }
         else
             app.logger().information("invalid request");
